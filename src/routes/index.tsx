@@ -81,8 +81,7 @@ function PlaygroundPage() {
             </span>
           </h1>
           <p className="text-lg leading-relaxed text-muted-foreground">
-            Testez les modèles d'intelligence artificielle développés par CITADEL, 
-            conçus pour les langues à faibles ressources d'Afrique de l'Ouest.
+            Testez les modèles d'intelligence artificielle développés par CITADEL
           </p>
         </div>
       </section>
