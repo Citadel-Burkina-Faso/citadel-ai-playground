@@ -1,17 +1,7 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { Routes, Route } from "react-router-dom";
 import { Languages, Mic, MessageSquare, Brain } from "lucide-react";
 import { ModelCard, type ModelCardProps } from "@/components/ModelCard";
 import citadelLogo from "@/assets/citadel-logo.webp";
-
-export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "CITADEL AI Playground — Testez nos modèles IA" },
-      { name: "description", content: "Explorez et testez les modèles d'intelligence artificielle développés par CITADEL pour les langues à faibles ressources." },
-    ],
-  }),
-  component: PlaygroundPage,
-});
 
 const models: ModelCardProps[] = [
   {
@@ -52,7 +42,7 @@ const models: ModelCardProps[] = [
   },
 ];
 
-function PlaygroundPage() {
+function App() {
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
@@ -104,3 +94,5 @@ function PlaygroundPage() {
     </div>
   );
 }
+
+export default App;
