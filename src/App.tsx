@@ -11,7 +11,7 @@ const models: ModelCardProps[] = [
     status: "available",
     language: "Mooré",
     category: "Traduction",
-    href: "/",
+    href: "/translation",
   },
   {
     title: "Transcription Mooré",

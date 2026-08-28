@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import type { LucideIcon } from "lucide-react";
@@ -56,11 +56,11 @@ export function ModelCard({ title, description, icon: Icon, status, language, ca
           Bientôt disponible
         </Button>
       ) : (
-        <Link to={href}>
+        <a href={href}>
           <Button variant="outline" className="w-full border-citadel-green/30 text-citadel-green hover:bg-citadel-green/10 hover:text-citadel-green">
             Essayer le modèle →
           </Button>
-        </Link>
+        </a>
       )}
     </div>
   );
